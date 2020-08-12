@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/cdl"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.NewsDetailActivity">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <android.support.v7.widget.Toolbar
+            app:title="日报详情"
+            app:layout_scrollFlags="scroll|snap"
+            android:id="@+id/toolBar"
+            android:layout_width="match_parent"
+            android:minHeight="60dp"
+            android:layout_height="200dp"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <!--ListView,RecyclerView,二级列表,ScrollView-->
+
+    <!--RecyclerView,NestedScrollView:超级的ScrollView  ScrollView can host only one direct child-->
+    <android.support.v4.widget.NestedScrollView
+        app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="@string/app_name"
+                android:background="@color/colorPrimaryDark"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
+            <TextView
+                android:text="@string/login"
+                android:background="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
+
+            <TextView
+                android:text="@string/app_name"
+                android:background="@color/colorPrimaryDark"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
+            <TextView
+                android:text="@string/login"
+                android:background="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
+
+            <TextView
+                android:text="@string/app_name"
+                android:background="@color/colorPrimaryDark"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
+            <TextView
+                android:text="@string/login"
+                android:background="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
+
+            <TextView
+                android:text="@string/app_name"
+                android:background="@color/colorPrimaryDark"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
+            <TextView
+                android:text="@string/login"
+                android:background="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
+
+            <TextView
+                android:text="@string/app_name"
+                android:background="@color/colorPrimaryDark"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
+            <TextView
+                android:text="@string/login"
+                android:background="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
+
+            <TextView
+                android:text="@string/app_name"
+                android:background="@color/colorPrimaryDark"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
+            <TextView
+                android:text="@string/login"
+                android:background="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

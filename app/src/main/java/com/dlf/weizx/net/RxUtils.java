@@ -26,7 +26,7 @@ public class RxUtils {
         };
     }
 
-    public static <T> ObservableTransformer<T,T> rxObserableSchedulerHelper(){
+    public static <T>ObservableTransformer<T,T> rxObserableSchedulerHelper(){
         //compose 简化线程
         return new ObservableTransformer<T, T>() {
             @Override

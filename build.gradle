@@ -5,11 +5,13 @@ buildscript {
     repositories {
         google()
         jcenter()
-        
+        // 添加代码仓库  步骤1 （projectbuild中的第七行）
+        mavenCentral()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.6.3'
-        
+        //greenDao生产代码插件  步骤2 （第十一行）
+        classpath 'org.greenrobot:greendao-gradle-plugin:3.2.2' // add plugin
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -20,7 +22,7 @@ allprojects {
     repositories {
         google()
         jcenter()
-        
+        maven { url 'https://jitpack.io' }
     }
 }
 

@@ -1,2 +1,2 @@
 rootProject.name='WeiZX'
-include ':app'
+include ':app',':easeui'

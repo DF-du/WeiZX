@@ -9,5 +9,10 @@ public interface Constants {
     //网络缓存的地址
     String PATH_DATA = BaseApp.sBaseApp.getCacheDir().getAbsolutePath() +
             File.separator + "data";
+
     String PATH_CACHE = PATH_DATA + "/NetCache";
+    int SUCCESS_CODE = 0;
+    String TITLE = "title";
+    String ID = "id";
+    String DATA = "data";
 }

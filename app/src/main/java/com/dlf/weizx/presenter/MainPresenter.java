@@ -1,21 +1,24 @@
 package com.dlf.weizx.presenter;
 
 import com.dlf.weizx.base.BasePresenter;
-import com.dlf.weizx.bean.NavBean;
 import com.dlf.weizx.model.LoginModel;
 import com.dlf.weizx.model.MainModel;
 import com.dlf.weizx.net.ResultCallBack;
 import com.dlf.weizx.view.MainView;
+import com.hyphenate.easeui.domain.EaseUser;
+
+import java.util.Map;
 
 public class MainPresenter extends BasePresenter<MainView> {
+
     private MainModel mMainModel;
     private LoginModel mLoginModel;
 
-    public void getData(){
-        mMainModel.getData(new ResultCallBack<NavBean>() {
+    public void getContacts(){
+        mMainModel.getConstacts(new ResultCallBack<Map<String, EaseUser>>() {
             @Override
-            public void onSuccess(NavBean NavBean) {
-
+            public void onSuccess(Map<String, EaseUser> map) {
+                mView.setContacts(map);
             }
 
             @Override
